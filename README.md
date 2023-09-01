@@ -20,5 +20,5 @@ pip install -r requirements.txt
 
 Run the app locally using: 
 ```sh
-streamlit run app.py
+streamlit run main.py
 ```
