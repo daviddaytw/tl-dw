@@ -9,7 +9,10 @@ from streamlit_folium import st_folium
 # Some global variables
 current_time = 1 #(pd.Timestamp('now') - pd.Timestamp('now').normalize()) / pd.Timedelta('1 hour')
 current_time = max(current_time, 9) # Fix the None data before 9 AM.
-ZIPCODES = {'94114': [37.7585841, -122.4496457], '94612': [37.8044871,-122.2706511]}
+ZIPCODES = {
+    '94114 - San Francisco': [37.7585841, -122.4496457],
+    '94612 - Oakland': [37.8044871,-122.2706511]
+}
 
 """
 Function to load and convert hospital's data.
